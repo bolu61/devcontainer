@@ -6,7 +6,7 @@ ARG USERGID=$USERUID
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y curl git sudo
+RUN apt-get update && apt-get install -y curl git sudo unzip
 
 # disable sudo password
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
